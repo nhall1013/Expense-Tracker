@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles/fontawesome-free-5.15.2-web/css/all.css">
+        <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    </head>
+
+    <body class="bg-info">
+        <header>
+            <h1 class="text-center">Expense Tracker</h1>
+        </header>
+        <div class="container d-flex p-3">
+            <div class="container p-3">
+                <div class="row p-3">
+                    <div class="col-sm-6">
+                        <div>
+                            <h3>Budget</h3>
+                            <hr>
+                            <input type="text" id="budget-value">
+                            <br>
+                            <br>
+                            <button class="btn bg-dark text-light" id="budget-button">Enter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-sm-6">
+                        <div>
+                            <h3>Expenses</h3>
+                            <hr>
+                            <label for="expense-name">Expense Name</label>
+                            <input type="text" id="expense-name">
+                            <label for="expense-input">Expense Value</label>
+                            <input type="text" id="expense-value">
+                            <br>
+                            <br>
+                            <button class="btn bg-dark text-light" id="expense-button">Enter</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="container p-3">
+                <div class="col-md-12">
+                    <div>
+                        <h3 class="text-center">Report</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Budget</h5>
+                                <p id="budget">0</p>
+                            </div>
+                            <div class="col">
+                                <h5>Expenses</h5>
+                                <p id="expense">0</p>
+                            </div>
+                            <div class="col">
+                                <h5>Remaining</h5>
+                                <p id="remaining">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-lg-4">
+                    <div class="col-md-6">
+                        <h5>Expense List</h5>
+                        <div>
+                            <ol id="expense-list"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/view.js"></script>
+        <script src="scripts/model.js"></script>
+        <script src="scripts/controller.js"></script>
+    </body>
+</html>
